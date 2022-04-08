@@ -34,6 +34,13 @@ fi
 
 log "Generate requirements.txt with Poetry"
 
+log "Install ensurepip"
+
+curl -sSL https://bootstrap.pypa.io/get-pip.py \
+    | python3
+
+python3 -m pip install ensurepip
+
 log "Install Poetry"
 
 curl -sSL https://install.python-poetry.org \

@@ -42,10 +42,6 @@ curl -sSL https://bootstrap.pypa.io/get-pip.py \
     | python3 \
     | indent
 
-log "Install ensurepip"
-
-python3 -m pip install ensurepip
-
 log "Install Poetry"
 
 curl -sSL https://install.python-poetry.org \

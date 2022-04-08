@@ -34,15 +34,13 @@ fi
 
 log "Generate requirements.txt with Poetry"
 
+export PATH="/app/.local/bin:$PATH"
+
 log "Bootstrap pip"
 
 curl -sSL https://bootstrap.pypa.io/get-pip.py \
     | python3 \
     | indent
-
-log "Add pip to PATH"
-
-export PATH="/app/.local/bin:$PATH"
 
 log "Install ensurepip"
 
